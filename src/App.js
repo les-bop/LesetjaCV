@@ -379,11 +379,9 @@ import Grid from '@material-ui/core/Grid';
                   'School: Chipa-Tabane Secondary School'
                 ),
                 react_1.default.createElement('br', null),
-                react_1.default.createElement(
-                  'label',
-                  null,
-                  'Year Completed: 2016'
-                ),
+                react_1.default.createElement('label', null, 'Grade: Matric'),
+                react_1.default.createElement('br', null),
+                react_1.default.createElement('label', null, 'Year: 2016'),
 
                 /*Tertiary level*/
                 react_1.default.createElement(
@@ -431,7 +429,7 @@ import Grid from '@material-ui/core/Grid';
                 react_1.default.createElement(
                   'label',
                   null,
-                  'Duration: February 2019 to March 2021'
+                  'Duration: February 2019 to March 2020'
                 ),
                 react_1.default.createElement('br', null),
                 react_1.default.createElement('br', null)
