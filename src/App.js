@@ -87,13 +87,25 @@ import Grid from '@material-ui/core/Grid';
                   backgroundImage: `url("https://scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/118670317_3358597370850279_8403953028140529171_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFc2o_TixEqhwetwYEFmcn2mjvhKprXsQGaO-EqmtexAZXA1z95kL7B97LlhvqzjcB7FH54hJWT6LLesLbPKjhi&_nc_ohc=Fscn5o4kVgQAX9I9tFU&_nc_ht=scontent.fjnb11-1.fna&oh=421db9dc3fc5ee29f0bf6250d7123948&oe=60F4DD07")`
                 }
               }),
+              react_1.default.createElement(Divider_1.default, null),
+              react_1.default.createElement(
+                'h1',
+
+                {
+                  style: {
+                    height: '6.8vh',
+                    paddingTop: '1px',
+                    paddingLeft: '5px',
+                    color: 'white'
+                  }
+                },
+                'Software Graduate'
+              ),
 
               react_1.default.createElement('div', {
                 style: {
-                  height: '6.5vh',
                   backgroundColor: 'white',
-                  paddingTop: '5px',
-                  borderColor: '#004743',
+                  borderColor: 'grey',
                   borderBottom: '2px',
                   textAlign: 'left'
                 }
@@ -134,15 +146,13 @@ import Grid from '@material-ui/core/Grid';
                 'div',
                 {
                   style: {
-                    backgroundColor: 'grey',
                     height: '6.8vh',
                     paddingTop: '1px',
-                    paddingLeft: '5px',
-                    borderRadius: '80px'
+                    paddingLeft: '5px'
                   }
                 },
                 react_1.default.createElement(
-                  'h3',
+                  'h1',
                   { style: { color: 'white' } },
                   'Lesetja Bopape'
                 )
@@ -425,6 +435,7 @@ import Grid from '@material-ui/core/Grid';
                   null,
                   ' Company: Protime Sports'
                 ),
+                react_1.default.createElement('br', null),
                 react_1.default.createElement('br', null),
                 react_1.default.createElement(
                   'label',
