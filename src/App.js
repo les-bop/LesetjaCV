@@ -57,24 +57,8 @@ import Grid from '@material-ui/core/Grid';
       }
     }))(LinearProgress_1.default);
 
-    const useStylesFacebook = styles_1.makeStyles(theme => ({
-      root: {
-        position: 'relative'
-      },
-      bottom: {
-        color: theme.palette.grey[theme.palette.type === 'dark' ? 500 : 900]
-      },
-      top: {
-        color: 'grey',
-        animationDuration: '600ms',
-        position: 'absolute',
-        left: 0
-      },
-      circle: {
-        strokeLinecap: 'round'
-      }
-    }));
-    function FullWidthGrid() {
+    /*Function*/
+    function CenteredGrid() {
       const classes = useStyles();
       return react_1.default.createElement(
         'div',
@@ -87,6 +71,7 @@ import Grid from '@material-ui/core/Grid';
             style: { backgroundColor: 'darkgrey' }
           },
 
+          /*Top left grid*/
           react_1.default.createElement(
             Grid_1.default,
             { container: true, spacing: 0 },
@@ -98,13 +83,13 @@ import Grid from '@material-ui/core/Grid';
                   height: '20vh',
                   borderRadius: '50px',
                   backgroundSize: 'cover',
-                  backgroundImage: `url("https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png")`
+                  alignItems: 'center',
+                  backgroundImage: `url("https://scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/118670317_3358597370850279_8403953028140529171_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFc2o_TixEqhwetwYEFmcn2mjvhKprXsQGaO-EqmtexAZXA1z95kL7B97LlhvqzjcB7FH54hJWT6LLesLbPKjhi&_nc_ohc=Fscn5o4kVgQAX9I9tFU&_nc_ht=scontent.fjnb11-1.fna&oh=421db9dc3fc5ee29f0bf6250d7123948&oe=60F4DD07")`
                 }
               }),
 
               react_1.default.createElement('div', {
                 style: {
-                  backgroundColor: 'yellow',
                   height: '6.5vh',
                   backgroundColor: 'white',
                   paddingTop: '5px',
@@ -116,6 +101,7 @@ import Grid from '@material-ui/core/Grid';
             ),
             react_1.default.createElement(Divider_1.default, null),
 
+            /*Top right grid*/
             react_1.default.createElement(
               Grid_1.default,
               { item: true, xs: 8 },
@@ -136,11 +122,11 @@ import Grid from '@material-ui/core/Grid';
                   { style: { color: 'grey' } },
                   'Attributes'
                 ),
-
+                react_1.default.createElement(Divider_1.default, null),
                 react_1.default.createElement(
                   'label',
                   { align: 'left' },
-                  'I am a hard working candidate with strong interpersonal skills and with the aim of excellence in all given task. I am determined to succeed with which I can relate with people'
+                  'I am a hard working candidate with strong interpersonal skills and with the aim of excellence in all given task. I am determined to succeed with which I can relate with people in a positive attitude.'
                 )
               ),
 
@@ -211,31 +197,34 @@ import Grid from '@material-ui/core/Grid';
                     react_1.default.createElement(
                       'h2',
                       { style: { color: 'grey' } },
-                      'Contact'
+                      'Personal Details'
                     ),
                     react_1.default.createElement(Divider_1.default, null),
                     react_1.default.createElement(
                       'label',
                       null,
-                      ' ',
-                      react_1.default.createElement(Call_1.default, null),
-                      '076 120 2388 '
+                      'Nationality: South African'
                     ),
-                    '  ',
                     react_1.default.createElement('br', null),
                     react_1.default.createElement(
                       'label',
                       null,
-                      ' ',
-                      react_1.default.createElement(Email_1.default, null),
-                      'lesetjabop@gmail.com'
+                      ' Contact: 076 120 2388'
                     ),
-                    '  ',
                     react_1.default.createElement('br', null),
-                    react_1.default.createElement('label', null, ' ')
+                    react_1.default.createElement(
+                      'label',
+                      null,
+                      'Email: lesetjabop@gmail.com'
+                    ),
+                    react_1.default.createElement('br', null),
+                    react_1.default.createElement(
+                      'label',
+                      null,
+                      ' Address: 178 Okapi street, Baviaanspoort'
+                    )
                   )
                 ),
-                '  ',
 
                 react_1.default.createElement(
                   'div',
@@ -370,7 +359,7 @@ import Grid from '@material-ui/core/Grid';
                     borderTop: 'none',
                     padding: '19px',
                     textAlign: 'left',
-                    height: '109vh',
+                    height: '110vh',
                     borderColor: 'grey'
                   }
                 },
@@ -424,6 +413,7 @@ import Grid from '@material-ui/core/Grid';
                 ),
                 react_1.default.createElement('br', null),
                 react_1.default.createElement('br', null),
+                react_1.default.createElement('label', null, 'Year: 2019'),
 
                 /*Work experience*/
                 react_1.default.createElement(
@@ -432,12 +422,16 @@ import Grid from '@material-ui/core/Grid';
                   'Work Experience'
                 ),
                 react_1.default.createElement(Divider_1.default, null),
-                react_1.default.createElement('label', null, ' Protime Sports'),
+                react_1.default.createElement(
+                  'label',
+                  null,
+                  ' Company: Protime Sports'
+                ),
                 react_1.default.createElement('br', null),
                 react_1.default.createElement(
                   'label',
                   null,
-                  'February 2019 to March 2021'
+                  'Duration: February 2019 to March 2021'
                 ),
                 react_1.default.createElement('br', null),
                 react_1.default.createElement('br', null)
@@ -447,6 +441,6 @@ import Grid from '@material-ui/core/Grid';
         )
       );
     }
-    exports.default = FullWidthGrid;
+    exports.default = CenteredGrid;
   }.apply(__cjsWrapper.exports, __cjsWrapper.args));
 })(System, System);
