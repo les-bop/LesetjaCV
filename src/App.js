@@ -38,24 +38,9 @@ import Grid from '@material-ui/core/Grid';
         padding: 4,
         width: '80%',
         alignItems: 'left',
-        justifyContent: 'center',
-        backgroundColor: 'grey'
+        justifyContent: 'center'
       }
     }));
-    const BorderLinearProgress = styles_1.withStyles(theme => ({
-      root: {
-        height: 10,
-        borderRadius: 5
-      },
-      colorPrimary: {
-        backgroundColor:
-          theme.palette.grey[theme.palette.type === 'light' ? 200 : 700]
-      },
-      bar: {
-        borderRadius: 5,
-        backgroundColor: 'grey'
-      }
-    }))(LinearProgress_1.default);
 
     /*Function*/
     function CenteredGrid() {
@@ -68,7 +53,7 @@ import Grid from '@material-ui/core/Grid';
           {
             className: classes.root,
             align: 'center',
-            style: { backgroundColor: 'darkgrey' }
+            style: { backgroundColor: 'orange' }
           },
 
           /*Top left grid*/
@@ -305,7 +290,7 @@ import Grid from '@material-ui/core/Grid';
                   'div',
                   {
                     className: classes.paper,
-                    style: { height: 'auto', backgroundColor: 'white' }
+                    style: { height: 'auto', backgroundColor: 'orange' }
                   },
                   react_1.default.createElement('br', null),
                   react_1.default.createElement('br', null),
